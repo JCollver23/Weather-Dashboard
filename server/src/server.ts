@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Serve static files from the "dist" directory (or replace with your directory name if needed)
-app.use(express.static('dist'));  // This serves everything inside the dist folder
+app.use(express.static('../client/dist'));  // This serves everything inside the dist folder
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());

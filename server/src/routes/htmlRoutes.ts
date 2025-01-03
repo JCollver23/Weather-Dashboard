@@ -11,7 +11,7 @@ const router = Router();
 
 // Define route to serve index.html
 router.get('/', (_req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '../../../client/dist/index.html'));
 });
 
 // Optional: Serve static assets (like CSS, JS, images) from a 'public' folder
